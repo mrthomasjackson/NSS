@@ -1,0 +1,5 @@
+cd /media/sf_sandbox/folder1
+for f in *.txt
+do 
+   cp -v $f /media/sf_sandbox/folder2/${f%.txt}$(date +%T-%m%d%y).txt
+done
